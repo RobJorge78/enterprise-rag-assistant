@@ -93,3 +93,17 @@ Uploaded documents are processed by the application and are not included in the 
 ## Project Purpose
 
 This project demonstrates practical experience with Retrieval-Augmented Generation, semantic search, LLM integration, prompt engineering, automated testing, CI, and secure API credential handling.
+
+## Agentic Document Actions
+
+The assistant includes a lightweight agent layer that selects an action based on the user's request.
+
+Supported actions:
+
+- **Search** – answers questions using relevant document sections retrieved through semantic search.
+- **Summarize** – generates a summary using the uploaded document.
+- **Unsupported Action Handling** – prevents unsupported requests from being executed.
+
+The agent logic is separated into `agent.py` and is covered by automated tests in `tests/test_agent.py`.
+
+This demonstrates basic agentic workflow design alongside the RAG pipeline.
